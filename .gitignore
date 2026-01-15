@@ -1,0 +1,16 @@
+# Ignore environment files
+.env
+*.sql
+!migrations.sql
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+access.log
+error.log
+vendor/
+composer.lock
+*.tmp
+*.bak
+*.swp
