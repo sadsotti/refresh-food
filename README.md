@@ -203,8 +203,10 @@ When a request cannot be fulfilled, the API returns the following HTTP status co
 - `product_id`: Integer ID from the products table.
 
 ### 🧮 Calculation Logic
-The total CO₂ saved is calculated dynamically using the following formula:
-$Total\ CO_2 = \sum (Quantity_i \times CO_2\_saved\_per\_unit_i)$
+
+The total CO₂ saved is calculated dynamically by joining the orders and products tables using the following formula:
+
+$$Total\ CO_2 = \sum_{i=1}^{n} (Quantity_i \times CO_{2\_saved\_per\_unit,i})$$
 
 ## 🧪 Testing Examples
 
